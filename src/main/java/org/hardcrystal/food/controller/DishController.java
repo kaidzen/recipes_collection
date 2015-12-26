@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * Created by Administrator on 18.12.2015.
  */
-@WebServlet(name = "DishController")
+@WebServlet(name = "DishController", urlPatterns = { "/DishController", "/dishes" })
 public class DishController extends HttpServlet {
 
     private DishDAO dishDao;
