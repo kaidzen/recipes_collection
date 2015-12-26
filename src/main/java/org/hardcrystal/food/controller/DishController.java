@@ -1,7 +1,7 @@
 package org.hardcrystal.food.controller;
 
 import org.hardcrystal.food.dao.DishDAO;
-import org.hardcrystal.food.dao.DisheDaoImpl;
+import org.hardcrystal.food.dao.DishDaoImpl;
 import org.hardcrystal.food.model.Dishes;
 
 import javax.servlet.RequestDispatcher;
@@ -23,7 +23,7 @@ public class DishController extends HttpServlet {
     public static final String INSERT_OR_EDIT = "/dish.jsp";
 
     public DishController() {
-        dishDao = new DisheDaoImpl();
+        dishDao = new DishDaoImpl();
 
     }
 
