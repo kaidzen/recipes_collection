@@ -1,6 +1,6 @@
 package org.hardcrystal.food.controller;
 
-import org.hardcrystal.food.dao.DisheDAO;
+import org.hardcrystal.food.dao.DishDAO;
 import org.hardcrystal.food.dao.DisheDaoImpl;
 import org.hardcrystal.food.model.Dishes;
 
@@ -18,7 +18,7 @@ import java.io.IOException;
 @WebServlet(name = "DishController")
 public class DishController extends HttpServlet {
 
-    private DisheDAO dishDao;
+    private DishDAO dishDao;
     public static final String LIST = "/listDishes.jsp";
     public static final String INSERT_OR_EDIT = "/dish.jsp";
 
