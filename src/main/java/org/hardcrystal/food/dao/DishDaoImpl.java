@@ -3,10 +3,7 @@ package org.hardcrystal.food.dao;
 import org.hardcrystal.food.dbHelpers.dbInfo;
 import org.hardcrystal.food.model.Dishes;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Connection;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +20,20 @@ public class DishDaoImpl implements DishDAO {
 
     @Override
     public void addRecipe(Dishes recipe) {
+
+        try {
+            String query = "insert into dishes (name, calories, list, process) values (?,?,?,?)";
+            PreparedStatement preparedStatement = conn.prepareStatement( query );
+            // preparedStatement.setInt( 1, recipe.getId_dish() );
+            preparedStatement.setString(2, recipe.getName());
+            preparedStatement.setInt(3, recipe.getCalories());
+            preparedStatement.setString(4, recipe.getList());
+            preparedStatement.setString(4, recipe.getProcess());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
