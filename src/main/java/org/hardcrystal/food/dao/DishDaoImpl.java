@@ -25,9 +25,9 @@ public class DishDaoImpl implements DishDAO {
             String query = "insert into dishes (name, calories, list, process) values (?,?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement( query );
             // preparedStatement.setInt( 1, recipe.getId_dish() );
-            preparedStatement.setString(2, recipe.getName());
-            preparedStatement.setInt(3, recipe.getCalories());
-            preparedStatement.setString(4, recipe.getList());
+            preparedStatement.setString(1, recipe.getName());
+            preparedStatement.setInt(2, recipe.getCalories());
+            preparedStatement.setString(3, recipe.getList());
             preparedStatement.setString(4, recipe.getProcess());
             preparedStatement.executeUpdate();
             preparedStatement.close();
