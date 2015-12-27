@@ -18,30 +18,32 @@
 <body>
 <form action="DishController" method="post">
   <fieldset>
-    <div>
-      <label for="id_dish">Recipe ID</label>
-      <input type="text" name="id_dish" value="<c:out value="${dish.id_dish}" />" readonly="readonly" placeholder="Recipe ID" />
-    </div>
-    <div>
-      <label for="name">Название рецепта</label>
-      <input type="text" name="name" value="<c:out value="${dish.name}" />" placeholder="Recipe name" />
-    </div>
-    <div>
-      <label for="calories">Калории</label>
-      <input type="text" name="calories" value="<c:out value="${dish.calories}" />" placeholder="Calories" />
-    </div>
-    <div>
-      <label for="list">Список ингридиентов</label>
-      <input type="text" name="list" value="<c:out value="${dish.list}" />" placeholder="Ingridients list" />
-    </div>
-    <div>
-      <label for="process">Процесс приготовления</label>
-      <input type="text" name="process" value="<c:out value="${dish.process}" />" placeholder="Preparation process" />
-    </div>
-    <div>
-      <input type="submit" value="Submit" />
-    </div>
-  </fieldset>
+<%--
+<div>
+  <label for="id_dish">Recipe ID</label>
+  <input type="text" name="id_dish" value="<c:out value="${dish.id_dish}" />" readonly="readonly" placeholder="Recipe ID" />
+</div>
+--%>
+<div>
+  <label for="name">Название рецепта</label>
+  <input type="text" name="name" value="<c:out value="${dish.name}" />" placeholder="Recipe name" />
+</div>
+<div>
+  <label for="calories">Калории</label>
+  <input type="text" name="calories" value="<c:out value="${dish.calories}" />" placeholder="Calories" />
+</div>
+<div>
+  <label for="list">Список ингридиентов</label>
+  <input type="text" name="list" value="<c:out value="${dish.list}" />" placeholder="Ingridients list" />
+</div>
+<div>
+  <label for="process">Процесс приготовления</label>
+  <input type="text" name="process" value="<c:out value="${dish.process}" />" placeholder="Preparation process" />
+</div>
+<div>
+  <input type="submit" value="Submit" />
+</div>
+</fieldset>
 </form>
 </body>
 </html>
