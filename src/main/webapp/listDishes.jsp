@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<table>
+<table border="1">
   <tbody>
   <c:forEach items="${dishes}" var="resipe">
     <tr>
