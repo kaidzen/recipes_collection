@@ -23,19 +23,19 @@
       <input type="text" name="id_dish" value="<c:out value="${dish.id_dish}" />" readonly="readonly" placeholder="Recipe ID" />
     </div>
     <div>
-      <label for="name">Recipe name</label>
+      <label for="name">Название рецепта</label>
       <input type="text" name="name" value="<c:out value="${dish.name}" />" placeholder="Recipe name" />
     </div>
     <div>
-      <label for="calories">Last Name</label>
+      <label for="calories">Калории</label>
       <input type="text" name="calories" value="<c:out value="${dish.calories}" />" placeholder="Calories" />
     </div>
     <div>
-      <label for="list">Course</label>
+      <label for="list">Список ингридиентов</label>
       <input type="text" name="list" value="<c:out value="${dish.list}" />" placeholder="Ingridients list" />
     </div>
     <div>
-      <label for="process">Year</label>
+      <label for="process">Процесс приготовления</label>
       <input type="text" name="process" value="<c:out value="${dish.process}" />" placeholder="Preparation process" />
     </div>
     <div>

@@ -35,7 +35,7 @@
 </table>
 
 <p>
-  <a href="<c:url value="/DishController?action=listDishes"/>">Add resipe</a>
+  <a href="<c:url value="/DishController?action=insert"/>">Add resipe</a>
 </p>
 
 </body>
