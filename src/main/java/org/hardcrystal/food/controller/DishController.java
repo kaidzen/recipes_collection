@@ -67,7 +67,7 @@ public class DishController extends HttpServlet {
 
         Integer dishId = Integer.parseInt(request.getParameter("id_dish"));
 
-        if( dishId == null  )
+        if( dishId == null || dishId < 0)
             dishDao.addRecipe(dish);
         else {
             dish.setId_dish(Integer.valueOf(dishId));
